@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack -w",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/vgsnv/simple-react-redux/issues"
   },
-  "homepage": "https://github.com/vgsnv/simple-react-redux#readme"
+  "homepage": "https://github.com/vgsnv/simple-react-redux#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.2.3",
+    "copy-webpack-plugin": "^4.2.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {}
 }
