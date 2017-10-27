@@ -1,0 +1,19 @@
+{
+  "name": "simple-react-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgsnv/simple-react-redux.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vgsnv/simple-react-redux/issues"
+  },
+  "homepage": "https://github.com/vgsnv/simple-react-redux#readme"
+}
