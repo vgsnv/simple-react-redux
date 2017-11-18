@@ -28,5 +28,14 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, 'src/components/'),
+      store: path.resolve(__dirname, 'src/store/'),
+      views: path.resolve(__dirname, 'src/views/'),
+      api: path.resolve(__dirname, 'src/api/'),
+    },
+    extensions: [".ts", ".tsx", ".js", ".json"]
+  },
 }
