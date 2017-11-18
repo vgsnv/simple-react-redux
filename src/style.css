@@ -1,0 +1,9 @@
+body{
+  min-width: 1004px;
+  color: #333;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}

@@ -13,6 +13,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: path.resolve(__dirname, 'src/index.html'), to: buildPath },
+      { from: path.resolve(__dirname, 'src/style.css'), to: buildPath },
     ])
   ],
   module: {
