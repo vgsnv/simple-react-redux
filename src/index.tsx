@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import ColorButton from 'components/ColorButton';
+import ColorsCode from 'components/ColorsCode';
 
 const App = (props) => {
 
@@ -17,15 +18,16 @@ const App = (props) => {
     color: 'green'
   }
 
-  const  yellowButton = {
+  const yellowButton = {
     title: 'Желтый',
     onClick: () => console.info('Click'),
     color: 'yellow'
   }
   return (<div>
-    <ColorButton {...redButton}/>
-    <ColorButton {...greenButton}/>
-    <ColorButton {...yellowButton}/>
+    <ColorButton {...redButton} />
+    <ColorButton {...greenButton} />
+    <ColorButton {...yellowButton} />
+    <ColorsCode />
   </div>)
 };
 
