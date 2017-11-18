@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 interface Props {
-  onClick: () => void;
+  clickAddBtn: () => void;
   title: string;
   color: string;
 }
@@ -14,7 +14,7 @@ export default class ColorButton extends React.Component<Props, State> {
   render() {
 
     const {
-      onClick,
+      clickAddBtn,
       title,
       color
     } = this.props;
@@ -38,7 +38,7 @@ export default class ColorButton extends React.Component<Props, State> {
           width: 100,
           margin: '0, auto, 0, auto',
         }}
-        onClick={onClick}
+        onClick={clickAddBtn}
       >
       </button>
     </div>)
