@@ -22,6 +22,7 @@ export default class ColorButton extends React.Component<Props, State> {
     return (<div
       style={{
         width: 150,
+        display: 'inline-block'
       }}
     >
       <p

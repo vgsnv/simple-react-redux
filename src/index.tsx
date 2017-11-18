@@ -11,8 +11,21 @@ const App = (props) => {
     color: 'red'
   }
 
+  const greenButton = {
+    title: 'Зеленый',
+    onClick: () => console.info('Click'),
+    color: 'green'
+  }
+
+  const  yellowButton = {
+    title: 'Желтый',
+    onClick: () => console.info('Click'),
+    color: 'yellow'
+  }
   return (<div>
     <ColorButton {...redButton}/>
+    <ColorButton {...greenButton}/>
+    <ColorButton {...yellowButton}/>
   </div>)
 };
 
