@@ -2,7 +2,14 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 import ColorButton from 'components/ColorButton';
+import ControlPanel from 'components/ControlPanel';
 import ColorsCode from 'components/ColorsCode';
+
+const ColorButtons = [
+  { id: '1', title: 'Красный', color: 'red', clickAddBtn: () => console.info('Click') },
+  { id: '2', title: 'Зеленый', color: 'green', clickAddBtn: () => console.info('Click') },
+  { id: '3', title: 'Желтый', color: 'yellow', clickAddBtn: () => console.info('Click') },
+];
 
 const Colors = [
   { id: '1', color: '#e59866' },
@@ -15,28 +22,8 @@ const Colors = [
 
 const App = (props) => {
 
-  const redButton = {
-    title: 'Красный',
-    clickAddBtn: () => console.info('Click'),
-    color: 'red'
-  }
-
-  const greenButton = {
-    title: 'Зеленый',
-    clickAddBtn: () => console.info('Click'),
-    color: 'green'
-  }
-
-  const yellowButton = {
-    title: 'Желтый',
-    clickAddBtn: () => console.info('Click'),
-    color: 'yellow'
-  }
-
   return (<div>
-    <ColorButton {...redButton} />
-    <ColorButton {...greenButton} />
-    <ColorButton {...yellowButton} />
+    <ControlPanel colorButtons={ColorButtons} />
     <ColorsCode clickDelBtn={() => console.log('click')} colors={Colors} />
   </div>)
 };
