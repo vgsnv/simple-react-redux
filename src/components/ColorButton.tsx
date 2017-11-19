@@ -21,7 +21,7 @@ export default class ColorButton extends React.Component<Props, State> {
 
     return (<div
       style={{
-        width: 150,
+        width: 120,
         display: 'inline-block'
       }}
     >
@@ -34,9 +34,10 @@ export default class ColorButton extends React.Component<Props, State> {
         style={{
           backgroundColor: color,
           borderRadius: 50,
-          height: 100,
-          width: 100,
-          margin: '0, auto, 0, auto',
+          height: 80,
+          width: 80,
+          marginLeft: 'auto',
+          marginRight: 'auto',
         }}
         onClick={clickAddBtn}
       >

@@ -5,12 +5,12 @@ import ColorButton from 'components/ColorButton';
 import ColorsCode from 'components/ColorsCode';
 
 const Colors = [
-  '#e59866',
-  '#f8c471',
-  '#f7dc6f',
-  '#7dcea0',
-  '#76d7c4',
-  '#7fb3d5',
+  { id: '1', color: '#e59866' },
+  { id: '2', color: '#f8c471' },
+  { id: '3', color: '#f7dc6f' },
+  { id: '4', color: '#7dcea0' },
+  { id: '5', color: '#76d7c4' },
+  { id: '6', color: '#7fb3d5' },
 ];
 
 const App = (props) => {
@@ -37,7 +37,7 @@ const App = (props) => {
     <ColorButton {...redButton} />
     <ColorButton {...greenButton} />
     <ColorButton {...yellowButton} />
-    <ColorsCode clickDelBtn={()=> console.log('click')} colors={Colors}/>
+    <ColorsCode clickDelBtn={() => console.log('click')} colors={Colors} />
   </div>)
 };
 
